@@ -1,0 +1,105 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "26.0.2"
+    defaultConfig {
+        applicationId "com.example.pdesai4.temp"
+        minSdkVersion 19
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            ndk {
+                abiFilters "armeabi-v7a"
+            }
+        }
+        debug {
+            ndk {
+                abiFilters "armeabi-v7a"
+            }
+        }
+    }
+}
+
+repositories {
+    flatDir {
+        dirs '../fidolibs'
+    }
+}
+
+dependencies {
+    compile fileTree(dir: "libs", include: ["*.jar"])
+
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:support-v13:25.3.1'
+    compile 'com.android.support:cardview-v7:25.3.1'
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+
+    compile 'com.google.code.gson:gson:2.7'
+    compile 'commons-codec:commons-codec:1.10'
+    compile 'com.google.android.gms:play-services-safetynet:10.2.0'
+    compile(name: 'DaonAndroidBC-1.0.0.0', ext: 'jar')
+    compile 'com.lambdaworks:scrypt:1.4.0'
+    compile 'com.scottyab:rootbeer-lib:0.0.4'
+    compile 'com.google.code.gson:gson:2.3.1'
+    compile 'com.google.android.gms:play-services-auth:10.2.0'
+
+    compile(name: 'DaonAndroidBC-1.0.0.0', ext: 'jar')
+    compile 'com.daon.fido.client.sdk:com.daon.fido.client.sdk:2.1.0@aar'
+    compile 'com.daon.sdk.authenticator:com.daon.sdk.authcommon:1.0.11@aar'
+    compile 'com.daon.sdk.authenticator:com.daon.sdk.authenticator:1.0.11@aar'
+    compile 'com.daon.sdk.crypto:com.daon.sdk.crypto:1.0.7@aar'
+    compile 'com.daon.sdk.device:com.daon.sdk.device:2.1.2@aar'
+
+    // Add these dependencies if face V1 support is required
+    //compile 'com.daon.sdk.authenticator:com.daon.sdk.faceauthenticator:1.0.11@aar'
+    //compile 'com.daon.sdk.face.rec:com.daon.sdk.face.rec:2.1.1@aar'
+    //compile 'com.daon.sdk.face:com.daon.sdk.face:2.1.1@aar'
+
+    // Add these dependencies if face V2 support is required
+//    compile 'com.daon.sdk.authenticator:com.daon.sdk.faceauthenticator-0203:1.0.11@aar'
+
+    // Remove these dependencies if face V3 support is not required
+    compile 'com.daon.sdk.authenticator:com.daon.sdk.faceauthenticator-0204:1.0.11@aar'
+    compile 'com.daon.sdk.face:com.daon.sdk.face:2.1.1@aar'
+    compile 'com.daon.sdk.face.liveness:com.daon.sdk.face.liveness:2.1.1@aar'
+    compile(name: 'nc7000_3a_fs_matcher-release', ext: 'aar')
+
+
+    // Remove these dependencies if voice support is not required
+    compile 'com.daon.sdk.authenticator:com.daon.sdk.voiceauthenticator:1.0.11@aar'
+    compile(name: 'daon-voice-release', ext: 'aar')
+    compile(name: 'ogg_encoder-1.0', ext:'aar')
+
+    // Add these dependencies if eye support is required
+    //compile 'com.daon.sdk.authenticator:com.daon.sdk.eyeauthenticator:1.0.11@aar'
+    //compile(name: 'EyeprintID', ext: 'aar')
+
+    // Add this dependency if TEE support is required
+    //compile(name:'hyprtrustedframework', ext:'aar')
+}
+
+task generateSources (type: Exec){
+    workingDir "../"
+    print(workingDir.toString())
+    if (System.getProperty('os.name').toLowerCase(Locale.ROOT).contains('windows')) {
+        commandLine 'cmd', '/c', './join_splitlibs.sh'
+    } else {
+        commandLine 'sh', '-c', './join_splitlibs.sh'
+    }
+}
+
+project.afterEvaluate {
+    preBuild.dependsOn generateSources
+}
+
+clean.dependsOn generateSources
+clean.mustRunAfter generateSources

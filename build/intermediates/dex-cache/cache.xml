@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/pdesai4/Documents/Temp/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/pdesai4/Documents/Temp/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_9d2e4d36a34a21dbd2def6074180059b6a3442d4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/pdesai4/.android/build-cache/210bc617633302b3175e2e43f2babf9206b581b5/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="b831d3902674d096189451d46fce219e2c2904b7">
+        <dex dex="/Users/pdesai4/Documents/Temp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6bc569ea1b114dd8eb6cce6584b9d03b6c27ad66/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/pdesai4/Documents/Temp/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="cc01a125fa73aed601661098687ecb788ee9f80e">
+        <dex dex="/Users/pdesai4/Documents/Temp/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_5170fb3d6eb40b2a6fde7bb886410738d85009aa/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/pdesai4/.android/build-cache/b1b229122d62c9e4e82873a08c10014c68e92e51/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="4e01b82d664e1a8253b2b9658e74b5da35c8771d">
+        <dex dex="/Users/pdesai4/Documents/Temp/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a389041aa16f908a66b80c6fec9e10946f5dc7b1/classes.dex" />
+    </item>
+
+</items>

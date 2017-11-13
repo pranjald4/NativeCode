@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="com.daon.sdk.face:com.daon.sdk.face-2.1.1">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/bb73052a74425531e7e77b11988f10114a65b171/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/bb73052a74425531e7e77b11988f10114a65b171/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

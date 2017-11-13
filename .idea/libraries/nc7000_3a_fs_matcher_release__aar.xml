@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="nc7000_3a_fs_matcher-release:@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/e87cc12e690671746dcea0fe01821f6fd9d4e8ed/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/e87cc12e690671746dcea0fe01821f6fd9d4e8ed/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

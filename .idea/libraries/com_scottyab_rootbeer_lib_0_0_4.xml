@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.scottyab:rootbeer-lib-0.0.4">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/aa3c66fd55fe83ece4962a10754c35cbf1ad51b0/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/aa3c66fd55fe83ece4962a10754c35cbf1ad51b0/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.scottyab/rootbeer-lib/0.0.4/b48b901f6b64049a64ca8148000c1b506e7a3ff7/rootbeer-lib-0.0.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="com.daon.sdk.face.liveness:com.daon.sdk.face.liveness-2.1.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/56a09ae59e79506a87b160f3e3d1f859435559b7/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/56a09ae59e79506a87b160f3e3d1f859435559b7/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

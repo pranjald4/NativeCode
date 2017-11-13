@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="daon-voice-release:@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/41ea14843817059d2ae5d539d1388b98a67e4715/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/41ea14843817059d2ae5d539d1388b98a67e4715/output/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/41ea14843817059d2ae5d539d1388b98a67e4715/output/jars/libs/testing-support-lib-0.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

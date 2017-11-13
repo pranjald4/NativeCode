@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="com.daon.sdk.authenticator:com.daon.sdk.voiceauthenticator-1.0.11">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/9b2724d5d8dbe57b050ab97a7001d38c9cfd9bab/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/9b2724d5d8dbe57b050ab97a7001d38c9cfd9bab/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

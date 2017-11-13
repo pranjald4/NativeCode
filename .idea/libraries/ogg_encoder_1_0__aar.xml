@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="ogg_encoder-1.0:@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/9fa93d440e2b2877b550eb307b13554bb800fc67/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/9fa93d440e2b2877b550eb307b13554bb800fc67/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
